@@ -17,23 +17,12 @@ def video2Image(video_path,original_frame_dir,selected_frame_dir,scaled_frame_di
 
 if __name__ == "__main__":
     fps=6
-    # video_path="C:/Users/pengqh/Downloads/Archive/MP4/25455306.mp4"
-    # video_path="C:/Users/pengqh/Downloads/Archive/MP4/14436910.mp4"
-    # video_path="C:/Users/pengqh/Downloads/Archive/Sat_Sep_27_12_17_14_2025/recordings/MP4/25455306.mp4"
-    # video_path="C:/Users/pengqh/Downloads/Archive/Sat_Nov__1_18_30_57_2025/recordings/MP4/26368109.mp4"
-    # video_path="C:/Users/pengqh/Downloads/Archive/Sat_Nov__1_18_30_57_2025/recordings/MP4/14436910.mp4"
-    # video_path="C:/Users/pengqh/Downloads/Archive/pineapple/15512737.mp4"
-    # video_path="C:/Users/pengqh/Downloads/Archive/pineapple/27085680.mp4"
-    video_path="C:/Users/pengqh/Downloads/Archive/pineapple/26368109.mp4"
-    # video_path=""
-    # original_frame_dir=""
+    video_path=""
     original_frame_dir=video_path.replace(".mp4",'')+"/original_frame_dir/"
-    # selected_frame_dir=""
     selected_frame_dir=video_path.replace(".mp4",'')+"/selected_frame_dir/"
     scaled_frame_dir=video_path.replace(".mp4",'')+"/scaled_frame_dir/"
     output_path=video_path.replace(".mp4",".jpg")
     scaling_factor=0.6
-    # scaling_direction="top-right"
     scaling_direction="bottom-center"
 
     franka=True
